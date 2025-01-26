@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 // TODO: Exercice 3.1 - Créer le hook useDebounce
 // TODO: Exercice 3.2 - Créer le hook useLocalStorage
 
-const useProductSearch = () => {
+const useProductSearch  = (searchTerm = '') => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -25,7 +25,7 @@ const useProductSearch = () => {
     };
 
     fetchProducts();
-  }, []); // TODO: Exercice 4.2 - Ajouter les dépendances pour la pagination
+  }, [searchTerm]); // TODO: Exercice 4.2 - Ajouter les dépendances pour la pagination
 
   // TODO: Exercice 4.1 - Ajouter la fonction de rechargement
   // TODO: Exercice 4.2 - Ajouter les fonctions pour la pagination
