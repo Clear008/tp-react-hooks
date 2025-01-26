@@ -1,6 +1,6 @@
 # TP React Hooks - Application de Gestion de Produits
 
-Ce TP a pour objectif de mettre en pratique l'utilisation des Hooks React (useState, useEffect, useContext) ainsi que la création de Hooks personnalisés.
+-- Ce TP a pour objectif de mettre en pratique l'utilisation des Hooks React (useState, useEffect, useContext) ainsi que la création de Hooks personnalisés.
 
 ## Installation et configuration initiale
 
