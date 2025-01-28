@@ -78,9 +78,13 @@ permettent une recherche en temps réel plus fluide et une expérience utilisate
 
 3. Problème : API initiale non fonctionnelle
    Solution : Utilisation de l'API DummyJSON
-[captures d'écran]
-![Capture d'écran de l'application](./images/Capture1.png)
-![Capture d'écran de l'application](./images/Capture2.png)
+Voici une capture d'écran de l'application :
+
+![Capture d'écran de l'application](images/Capture1.png)
+
+Une autre capture d'écran :
+
+![Capture d'écran de l'application](images/Capture2.png)
 ```
 
 ### Exercice 2 : Context et Internationalisation
