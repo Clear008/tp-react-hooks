@@ -55,7 +55,19 @@ _Votre réponse pour l'exercice 1 :_
 ```
 ## Solution implémentée
 
-J'ai apporté plusieurs modifications pour améliorer l'expérience utilisateur et optimiser les performances de l'application. Le composant ProductSearch a été modifié pour inclure un état local permettant de gérer le terme de recherche saisi par l'utilisateur. J'ai aussi intégré un délais de recherche avec debounce, permettant de limiter les appels API en réduisant la fréquence des requêtes lors de la frappe, ce qui améliore la réactivité de l'application. En parallèle, j'ai ajouté des indicateurs visuels de recherche pour informer l'utilisateur pendant les chargements. Enfin, l'API initiale a été remplacée par DummyJSON, pour assurer un meilleur fonctionnement des recherches. Ces changements permettent une recherche en temps réel plus fluide et une expérience utilisateur améliorée.
+J'ai apporté plusieurs modifications pour améliorer l'expérience utilisateur et optimiser les performances de 
+
+l'application. Le composant ProductSearch a été modifié pour inclure un état local permettant de gérer le terme de 
+
+recherche saisi par l'utilisateur. J'ai aussi intégré un délais de recherche avec debounce, permettant de limiter les 
+
+appels API en réduisant la fréquence des requêtes lors de la frappe, ce qui améliore la réactivité de l'application. En 
+
+parallèle, j'ai ajouté des indicateurs visuels de recherche pour informer l'utilisateur pendant les chargements. Enfin, 
+
+l'API initiale a été remplacée par DummyJSON, pour assurer un meilleur fonctionnement des recherches. Ces changements 
+
+permettent une recherche en temps réel plus fluide et une expérience utilisateur améliorée.
 
 ### Difficultés rencontrées et solutions
 1. Problème : Trop d'appels API lors de la frappe
