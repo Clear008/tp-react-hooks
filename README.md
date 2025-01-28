@@ -74,7 +74,7 @@ permettent une recherche en temps réel plus fluide et une expérience utilisate
    Solution : Utilisation de l'API DummyJSON
 Voici une capture d'écran de l'application :
 
-![Capture d'écran de l'application]([tp-react-hooks/images/Capture1.png](https://github.com/Clear008/tp-react-hooks/blob/main/images/Capture1.PNG))
+![Capture d'écran de l'application](tp-react-hooks/images/Capture1.png)
 
 Une autre capture d'écran :
 
