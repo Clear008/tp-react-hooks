@@ -1,15 +1,18 @@
 import { useState, useEffect } from 'react';
 
+// TODO: Exercice 3.1 - Créer le hook useDebounce
+// TODO: Exercice 3.2 - Créer le hook useLocalStorage
 const useProductSearch = (searchTerm = '') => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  // TODO: Exercice 4.2 - Ajouter l'état pour la pagination
 
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        // Utilisation de DummyJSON à la place
+        // TODO: Exercice 4.2 - Modifier l'URL pour inclure les paramètres de pagination
         const url = searchTerm 
           ? `https://dummyjson.com/products/search?q=${searchTerm}`
           : 'https://dummyjson.com/products';
