@@ -1,12 +1,15 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { ThemeContext } from '../App';
 import { useDebounce } from '../hooks/useDebounce';
+import { LanguageContext } from '../App';
 
 const ProductSearch = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [isSearching, setIsSearching] = useState(false);
   const { isDarkTheme } = useContext(ThemeContext);
-  
+  // TODO: Exercice 2.1 - Utiliser le LanguageContext
+  const { translations } = useContext(LanguageContext);
+  // TODO: Exercice 1.2 - Utiliser le hook useDebounce
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
 
   useEffect(() => {
@@ -21,10 +24,10 @@ const ProductSearch = ({ onSearch }) => {
         type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="Rechercher un produit..."
+        placeholder={translations.search}
         className={`form-control ${isDarkTheme ? 'bg-dark text-light' : ''}`}
       />
-      {isSearching && <div className="text-muted mt-2">Recherche en cours...</div>}
+      {isSearching && <div className="text-muted mt-2">{translations.loading}</div>}
     </div>
   );
 };

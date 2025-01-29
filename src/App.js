@@ -2,35 +2,63 @@ import React, { createContext, useState } from 'react';
 import ProductList from './components/ProductList';
 import ProductSearch from './components/ProductSearch';
 import ThemeToggle from './components/ThemeToggle';
+import LanguageSelector from './components/LanguageSelector';
 
-// TODO: Exercice 2.1 - Créer le LanguageContext
+export const translations = {
+  fr: {
+    title: "Catalogue de Produits",
+    search: "Rechercher un produit...",
+    loading: "Chargement...",
+    price: "Prix:",
+    darkMode: "Mode Sombre",
+    lightMode: "Mode Clair",
+    results: "Résultats pour",
+    productsFound: "produits trouvés"
+  },
+  en: {
+    title: "Product Catalog",
+    search: "Search for a product...",
+    loading: "Loading...",
+    price: "Price:",
+    darkMode: "Dark Mode",
+    lightMode: "Light Mode",
+    results: "Results for",
+    productsFound: "products found"
+  }
+};
 
+export const LanguageContext = createContext();
 export const ThemeContext = createContext();
 
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  // TODO: Exercice 2.2 - Ajouter l'état pour la langue
+  const [language, setLanguage] = useState('fr');
 
-  console.log('Terme de recherche dans App:', searchTerm);
+  const languageValue = {
+    language,
+    setLanguage,
+    translations: translations[language]
+  };
 
   return (
-    <ThemeContext.Provider value={{ isDarkTheme, setIsDarkTheme }}>
-      {/* TODO: Exercice 2.1 - Wrapper avec LanguageContext.Provider */}
-      <div className={`container ${isDarkTheme ? 'bg-dark text-light' : 'bg-light'}`}>
-        <header className="my-4">
-          <h1 className="text-center">Catalogue de Produits</h1>
-          <div className="d-flex justify-content-end gap-2">
-            <ThemeToggle />
-            {/* TODO: Exercice 2.2 - Ajouter le sélecteur de langue */}
-          </div>
-        </header>
-        <main>
-        <ProductSearch onSearch={setSearchTerm} />
-        <ProductList searchTerm={searchTerm} />
-        </main>
-      </div>
-    </ThemeContext.Provider>
+    <LanguageContext.Provider value={languageValue}>
+      <ThemeContext.Provider value={{ isDarkTheme, setIsDarkTheme }}>
+        <div className={`container ${isDarkTheme ? 'bg-dark text-light' : 'bg-light'}`}>
+          <header className="my-4">
+            <h1 className="text-center">{translations[language].title}</h1>
+            <div className="d-flex justify-content-end gap-2">
+              <ThemeToggle />
+              <LanguageSelector />
+            </div>
+          </header>
+          <main>
+            <ProductSearch onSearch={setSearchTerm} />
+            <ProductList searchTerm={searchTerm} />
+          </main>
+        </div>
+      </ThemeContext.Provider>
+    </LanguageContext.Provider>
   );
 };
 

@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../App';
+import { LanguageContext } from '../App';
 
 const ThemeToggle = () => {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
+  const { translations } = useContext(LanguageContext);
   
   return (
     <button
@@ -13,7 +15,7 @@ const ThemeToggle = () => {
           : 'bg-light text-dark border border-dark'
       }`}
     >
-      {isDarkTheme ? 'Mode Clair' : 'Mode Sombre'}
+    {isDarkTheme ? translations.lightMode : translations.darkMode}
     </button>
   );
 };
