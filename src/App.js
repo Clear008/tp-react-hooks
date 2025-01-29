@@ -5,8 +5,7 @@ import ThemeToggle from './components/ThemeToggle';
 import LanguageSelector from './components/LanguageSelector';
 import { translations } from './utils/translations';
 
-
-
+ 
 export const LanguageContext = createContext();
 export const ThemeContext = createContext();
 
