@@ -52,7 +52,7 @@ Pour chaque exercice :
 - [ ] 1.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 1 :_
-```
+
 ## Solution implémentée
 
    J'ai apporté plusieurs modifications pour améliorer l'expérience utilisateur et optimiser les performances de 
@@ -74,12 +74,12 @@ permettent une recherche en temps réel plus fluide et une expérience utilisate
    Solution : Utilisation de l'API DummyJSON
 Voici une capture d'écran de l'application :
 
-![Capture d'écran de l'application](tp-react-hooks/images/Capture1.png)
+![Capture d'écran de l'application](tp-react-hooks/images/Capture1.PNG)
 
 Une autre capture d'écran :
 
-![Capture d'écran de l'application](tp-react-hooks/images/Capture2.png)
-```
+![Capture d'écran de l'application](tp-react-hooks/images/Capture2.PNG)
+
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
