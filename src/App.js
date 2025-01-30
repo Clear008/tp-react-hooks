@@ -4,15 +4,17 @@ import ProductSearch from './components/ProductSearch';
 import ThemeToggle from './components/ThemeToggle';
 import LanguageSelector from './components/LanguageSelector';
 import { translations } from './utils/translations';
+import { useLocalStorage } from './hooks/useLocalStorage';
 
- 
+
 export const LanguageContext = createContext();
 export const ThemeContext = createContext();
 
 const App = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  // Utilisation de useLocalStorage au lieu de useState
+  const [isDarkTheme, setIsDarkTheme] = useLocalStorage('theme', false);
+  const [language, setLanguage] = useLocalStorage('language', 'fr');
   const [searchTerm, setSearchTerm] = useState('');
-  const [language, setLanguage] = useState('fr');
 
   const languageValue = {
     language,
