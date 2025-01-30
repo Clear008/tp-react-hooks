@@ -44,11 +44,9 @@ permettent une recherche en temps réel plus fluide et une expérience utilisate
    Solution : Utilisation de l'API DummyJSON
 
 #### Voici une capture d'écran de l'application :
-
 ![Capture d'écran de l'application](./images/Capture1.png)
 
 #### Une autre capture d'écran :
-
 ![Capture d'écran de l'application](./images/Capture2.png)
 
 ****************
@@ -72,11 +70,9 @@ Solution : Utilisation d'un contexte global pour centraliser les textes et assur
 Solution : Ajout d'un état global avec useContext pour mettre à jour les textes en temps réel
 
 #### Voici une capture d'écran de la page en français :
-
 ![Capture d'écran de l'application](./images/Capture3.png)
 
 #### Une capture d'écran pour la page en anglais :
-
 ![Capture d'écran de l'application](./images/Capture4.png)
 
 ****************
@@ -105,7 +101,6 @@ Solution : Utilisation du hook useDebounce pour limiter la fréquence des requê
 Solution : Implémentation du hook useLocalStorage pour stocker les préférences utilisateur.
 
 #### Voici une capture d'écran du locale storage :
-
 ![Capture d'écran de l'application](./images/Capture7.png)
 
 ****************
@@ -128,9 +123,12 @@ J'ai ajouté deux fonctionnalités importantes le bouton de rechargement qui per
 Solution : Ajout d’un bouton pour recharger les produits via reload.
 
 #### Une capture d'écran pour le botton de rechargement :
-
 ![Capture d'écran de l'application](./images/Capture5.png)
 
 #### Une capture d'écran qui montre la pagination :
-
 ![Capture d'écran de l'application](./images/Capture6.png)
+
+
+## Auteur
+- **Nom:** [Wissal Leknouch]
+- **GitHub:** [@votre-username](https://github.com/Clear008)
