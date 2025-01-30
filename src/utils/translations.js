@@ -8,7 +8,9 @@ export const translations = {
     darkMode: "Mode Sombre",
     lightMode: "Mode Clair",
     results: "Résultats pour",
-    productsFound: "produits trouvés"
+    productsFound: "produits trouvés",
+    reload: "Recharger",
+    error: "Erreur lors du chargement des produits"
   },
   en: {
     title: "Product Catalog",
@@ -18,6 +20,8 @@ export const translations = {
     darkMode: "Dark Mode",
     lightMode: "Light Mode",
     results: "Results for",
-    productsFound: "products found"
+    productsFound: "products found",
+    reload: "Reload",
+    error: "Error loading products"
   }
 };
