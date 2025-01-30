@@ -44,13 +44,13 @@ permettent une recherche en temps réel plus fluide et une expérience utilisate
    Solution : Utilisation de l'API DummyJSON
 Voici une capture d'écran de l'application :
 
-![Capture d'écran de l'application](./images/Capture1.PNG)
+![Capture d'écran de l'application](./images/Capture1.png)
 
 Une autre capture d'écran :
 
-![Capture d'écran de l'application](./images/Capture2.PNG)
+![Capture d'écran de l'application](./images/Capture2.png)
 
----
+****************
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
 
@@ -72,13 +72,13 @@ Solution : Ajout d'un état global avec useContext pour mettre à jour les texte
 
 Voici une capture d'écran de la page en français :
 
-![Capture d'écran de l'application](./images/Capture3.PNG)
+![Capture d'écran de l'application](./images/Capture3.png)
 
 Une capture d'écran pour la page en anglais :
 
-![Capture d'écran de l'application](./images/Capture4.PNG)
+![Capture d'écran de l'application](./images/Capture4.png)
 
----
+****************
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
 
@@ -105,9 +105,9 @@ Solution : Implémentation du hook useLocalStorage pour stocker les préférence
 
 Voici une capture d'écran du locale storage :
 
-![Capture d'écran de l'application](./images/Capture7.PNG)
+![Capture d'écran de l'application](./images/Capture7.png)
 
----
+****************
 ### Exercice 4 : Gestion Asynchrone et Pagination
 #### Objectif : Gérer le chargement et la pagination
 
@@ -128,9 +128,9 @@ Solution : Ajout d’un bouton pour recharger les produits via reload.
 
 Une capture d'écran pour le botton de rechargement :
 
-![Capture d'écran de l'application](./images/Capture5.PNG)
+![Capture d'écran de l'application](./images/Capture5.png)
 
 Une capture d'écran qui montre la pagination :
 
-![Capture d'écran de l'application](./images/Capture6.PNG)
+![Capture d'écran de l'application](./images/Capture6.png)
 
