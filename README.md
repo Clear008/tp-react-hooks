@@ -130,5 +130,5 @@ Solution : Ajout d’un bouton pour recharger les produits via reload.
 
 
 ## Auteur
-- **Nom:** [Wissal Leknouch]
-- **GitHub:** [@votre-username](https://github.com/Clear008)
+- **Nom:** Wissal Leknouch
+- **GitHub:** [@Clear008](https://github.com/Clear008)
