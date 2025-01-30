@@ -89,10 +89,24 @@ Une autre capture d'écran :
 - [ ] 2.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 2 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+
+## Solution implémentée
+J'ai ajouté une fonctionnalité de changement de langue pour permettre aux utilisateurs de basculer entre le français  et l'anglais. Pour cela, j'ai créé un contexte de langue (LanguageContext) et un fichier séparé pour gérer les traductions. J'ai ensuite intégré un sélecteur de langue dans l'interface, permettant de modifier dynamiquement les textes de l'application sans recharger la page.
+
+### Difficultés rencontrées et solutions
+1. Problème : Gestion des traductions dans plusieurs composants
+Solution : Utilisation d'un contexte global pour centraliser les textes et assurer leur mise à jour dynamique
+
+2. Problème : Le changement de langue ne se répercutait pas instantanément
+Solution : Ajout d'un état global avec useContext pour mettre à jour les textes en temps réel
+
+Voici une capture d'écran de la page en français :
+
+![Capture d'écran de l'application](tp-react-hooks/images/Capture3.PNG)
+
+Une capture d'écran pour la page en anglais :
+
+![Capture d'écran de l'application](tp-react-hooks/images/Capture4.PNG)
 
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
@@ -102,10 +116,26 @@ Expliquez votre solution ici
 - [ ] 3.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 3 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+
+## Solution implémentée
+J'ai créé deux hooks personnalisés pour améliorer la réutilisabilité du code et optimiser les performances de l'application.
+
+** useDebounce : Ce hook permet de retarder l'exécution d'une fonction après un certain délai, évitant ainsi trop d'appels  lors de la frappe dans la barre de recherche.
+
+** useLocalStorage : Ce hook gère le stockage et la récupération de données dans le localStorage, ou j'ai souvgardé  le thème et la langue.
+ 
+### Difficultés rencontrées et solutions
+
+1. Problème : Trop d'appels API lors de la saisie
+Solution : Utilisation du hook useDebounce pour limiter la fréquence des requêtes.
+
+2. Problème : Nécessité de sauvegarder l'état du thème et de la langue
+Solution : Implémentation du hook useLocalStorage pour stocker les préférences utilisateur.
+
+Voici une capture d'écran du locale storage :
+
+![Capture d'écran de l'application](tp-react-hooks/images/Capture7.PNG)
+
 
 ### Exercice 4 : Gestion Asynchrone et Pagination
 #### Objectif : Gérer le chargement et la pagination
@@ -115,10 +145,23 @@ Expliquez votre solution ici
 - [ ] 4.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 4 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+
+## Solution implémentée
+
+J'ai ajouté deux fonctionnalités importantes le bouton de rechargement qui permet de relancer la requête pour récupérer les produits en cas d'erreur ou de mise à jour et la pagination pour gèrer l'affichage des produits par pages, avec navigation entre les pages.
+
+### Difficultés rencontrées et solutions
+
+1. Problème : Besoin de recharger les données facilement
+Solution : Ajout d’un bouton pour recharger les produits via reload.
+
+Une capture d'écran pour le botton de rechargement :
+
+![Capture d'écran de l'application](tp-react-hooks/images/Capture5.PNG)
+
+Une capture d'écran qui montre la pagination :
+
+![Capture d'écran de l'application](tp-react-hooks/images/Capture6.PNG)
 
 ## Rendu
 
